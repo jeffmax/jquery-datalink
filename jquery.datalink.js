@@ -77,11 +77,11 @@ $.extend({
 				var $this = $( target ),
 					args = [ parts[0], value ];
 
-			$this.triggerHandler( eventNameSetField + parts[1] + "!", args );
+			$this.triggerHandler( eventNameSetField + parts[1], args );
 			if ( value !== undefined ) {
 				target[ field ] = value;
 			}
-			$this.triggerHandler( eventNameChangeField + parts[1] + "!", args );
+			$this.triggerHandler( eventNameChangeField + parts[1], args );
 		}
 	}
 });
